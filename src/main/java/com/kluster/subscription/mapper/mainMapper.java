@@ -1,4 +1,4 @@
 package com.kluster.subscription.mapper;
 
-public interface mapper {
+public interface mainMapper {
 }
