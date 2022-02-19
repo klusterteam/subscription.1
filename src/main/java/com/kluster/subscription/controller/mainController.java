@@ -5,10 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-
-
-
-public class controller {
+public class mainController {
 	@GetMapping("/")
 	public String main(Model model) {
 		model.addAttribute("title","KLUSTER :: 구독 관리");
