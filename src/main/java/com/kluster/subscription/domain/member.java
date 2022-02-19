@@ -5,8 +5,8 @@ public class member {
 	private String memberPass;
 	private String memberPass2;
 	private String memberName;
-	private String memberNicname;
-	private String memberPhonenum;
+	private String memberNickname;
+	private String memberPhoneNum;
 	private String memberDate;
 	
 	public String getMemberId() {
@@ -33,17 +33,17 @@ public class member {
 	public void setMemberName(String memberName) {
 		this.memberName = memberName;
 	}
-	public String getMemberNicname() {
-		return memberNicname;
+	public String getMemberNickname() {
+		return memberNickname;
 	}
-	public void setMemberNicname(String memberNicname) {
-		this.memberNicname = memberNicname;
+	public void setMemberNickname(String memberNickname) {
+		this.memberNickname = memberNickname;
 	}
-	public String getMemberPhonenum() {
-		return memberPhonenum;
+	public String getMemberPhoneNum() {
+		return memberPhoneNum;
 	}
-	public void setMemberPhonenum(String memberPhonenum) {
-		this.memberPhonenum = memberPhonenum;
+	public void setMemberPhoneNum(String memberPhoneNum) {
+		this.memberPhoneNum = memberPhoneNum;
 	}
 	public String getMemberDate() {
 		return memberDate;
@@ -63,9 +63,9 @@ public class member {
 		builder.append(", memberName=");
 		builder.append(memberName);
 		builder.append(", memberNicname=");
-		builder.append(memberNicname);
+		builder.append(memberNickname);
 		builder.append(", memberPhonenum=");
-		builder.append(memberPhonenum);
+		builder.append(memberPhoneNum);
 		builder.append(", memberDate=");
 		builder.append(memberDate);
 		builder.append("]");

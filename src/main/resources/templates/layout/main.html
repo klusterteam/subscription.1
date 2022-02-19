@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head th:replace="fragments/main/head :: headFragment"></head>
+    <body>
+    <!-- 메인 화면의 header -->
+        <div th:replace="fragments/main/header :: headerFragment"></div>
+
+        <div>
+            <!-- 메인 화면의 content -->
+            <div layout:fragment="content"></div>
+        </div>
+
+        <!-- 메인 화면의 footer -->
+        <div th:replace="fragments/main/footer :: footerFragment"></div>
+
+    </body>
+</html>
