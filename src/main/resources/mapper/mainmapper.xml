@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kluster.subscription.mapper.mainMapper">
+
+    <!--RESULTMAP #1 메인 화면 표출 구독 서비스 리스트-->
+    <resultMap id="mainServiceList" type="service">
+        <result property="subCode" column="sub_code"></result>
+        <result property="subName" column="sub_name"></result>
+        <result property="subUrl" column="sub_url"></result>
+        <result property="subDescription" column="sub_description"></result>
+        <result property="subThumbnail" column="sub_thumbnail"></result>
+
+    </resultMap>
+
+    <!--메인 화면에 표출되는 구독 서비스 리스트-->
+    <select id="getMainServiceList" resultMap="mainServiceList">
+        SELECT
+               sub_code,
+               sub_name,
+               sub_url,
+               sub_description,
+               sub_thumbnail
+        FROM
+             sub_sub_service
+    </select>
+
+</mapper>
