@@ -1,12 +1,12 @@
 package com.kluster.subscription.mapper;
 
-import com.kluster.subscription.domain.service;
+import com.kluster.subscription.domain.Service;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
 @Mapper
-public interface mainMapper {
+public interface MainMapper {
 
-    List<service> getMainServiceList();
+    List<Service> getMainServiceList();
 }

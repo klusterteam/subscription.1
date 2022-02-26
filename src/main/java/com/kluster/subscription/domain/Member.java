@@ -1,6 +1,6 @@
 package com.kluster.subscription.domain;
 
-public class member {
+public class Member {
 	private String memberId;
 	private String memberPass;
 	private String memberPass2;

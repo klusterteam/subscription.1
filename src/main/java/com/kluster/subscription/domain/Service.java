@@ -1,6 +1,6 @@
 package com.kluster.subscription.domain;
 
-public class service {
+public class Service {
 
     public String subCode;
     public String subName;

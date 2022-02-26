@@ -1,7 +1,7 @@
 package com.kluster.subscription.controller;
 
-import com.kluster.subscription.domain.service;
-import com.kluster.subscription.service.mainService;
+import com.kluster.subscription.domain.Service;
+import com.kluster.subscription.service.MainService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.List;
 
 @Controller
-public class mainController {
+public class MainController {
 
-	private final mainService mainService;
+	private final MainService mainService;
 
-	public mainController(mainService mainService) {
+	public MainController(MainService mainService) {
 		this.mainService = mainService;
 	}
 
@@ -21,7 +21,7 @@ public class mainController {
 	/*메인 화면 + 초기 화면에 표출되는 구독 서비스 리스트*/
 	public String main(Model model) {
 
-		List<service> mainServiceList = mainService.getMainServiceList();
+		List<Service> mainServiceList = mainService.getMainServiceList();
 
 		System.out.println(mainServiceList);
 
